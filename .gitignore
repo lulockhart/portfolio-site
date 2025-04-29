@@ -1,0 +1,17 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Python environments (if you have any)
+venv/
+env/
+.venv/
+
+# Ignore node_modules if you accidentally install npm packages
+node_modules/
+
+# Ignore any IDE/editor folders
+.vscode/
+.idea/
+
+# Ignore any cache or log files
+*.log
