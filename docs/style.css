@@ -56,19 +56,26 @@ body {
   width: 100%;
 }
 
+/* BUTTON STYLE UPGRADE */
 .button {
   display: block;
   background-color: #004080;
   color: white;
   text-decoration: none;
   padding: 0.6rem 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.2s;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s, border 0.2s, transform 0.1s;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
   background-color: #0066cc;
+  border: 2px solid #003366;
+  transform: translateY(-1px);
 }
 
 /* Main Content */
