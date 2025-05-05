@@ -1,64 +1,77 @@
-/* Basic Reset */
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General Page Styles */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
   line-height: 1.6;
-  padding: 20px;
+}
+
+/* Layout Container */
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
 }
 
 /* Header */
 header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2rem 0;
   text-align: center;
-  padding: 30px 0;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #e91e63; /* Pink accent */
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #fff;
 }
 
-nav {
-  margin-top: 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #555555;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #e91e63; /* Pink hover */
-}
-
-/* Main Sections */
-main {
-  max-width: 800px;
-  margin: 40px auto;
-}
-
-section {
-  margin-bottom: 50px;
-}
-
+/* Section Titles */
 h2 {
-  color: #e91e63;
-  margin-bottom: 15px;
+  color: #004080;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* Project List */
+.projects ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.projects li {
+  background: #e9ecef;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #004080;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
+  background-color: #1a1a1a;
+  color: #ccc;
   text-align: center;
-  margin-top: 40px;
+  padding: 1rem 0;
   font-size: 0.9rem;
-  color: #777777;
 }
