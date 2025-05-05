@@ -18,7 +18,8 @@ body {
 }
 
 .side-panel {
-  background-color: #424255;
+  background-color: #1f1f2e;
+  color: white;
   padding: 2rem 1.5rem;
   width: 280px;
   flex-shrink: 0;
