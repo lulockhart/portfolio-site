@@ -19,7 +19,7 @@ body {
 
 .side-panel {
   background-color: #1f1f2e;
-  color: #ffffff;
+  color: white;
   padding: 2rem 1.5rem;
   width: 280px;
   flex-shrink: 0;
@@ -45,7 +45,7 @@ body {
 
 .subtitle {
   font-size: 0.9rem;
-  color: #cccccc;
+  color: #ffffff;
   margin: 2px 0;
 }
 
@@ -57,25 +57,24 @@ body {
   width: 100%;
 }
 
-/* Button Style */
 .button {
   display: block;
-  background-color: #0066cc;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #1f1f2e;
   text-decoration: none;
   padding: 0.6rem 1rem;
   border-radius: 8px;
-  border: 2px solid #004080;
+  border: 2px solid transparent;
   font-weight: 600;
   font-size: 0.95rem;
   transition: background-color 0.2s, border 0.2s, transform 0.1s;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
-  background-color: #339aff;
-  border: 2px solid #003366;
+  background-color: #f1f1f1;
+  border: 2px solid #cccccc;
   transform: translateY(-1px);
 }
 
