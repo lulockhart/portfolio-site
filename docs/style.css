@@ -1,4 +1,4 @@
-/* Layout Reset */
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,71 +6,75 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, sans-serif;
   color: #212529;
+  background-color: #ffffff;
+}
+
+/* Layout */
+.main-layout {
   display: flex;
   min-height: 100vh;
 }
 
-/* Grid Layout */
-.layout {
-  display: flex;
-  width: 100%;
-}
-
-/* Sidebar */
-.sidebar {
-  background-color: #1e1e2f;
-  color: #fff;
-  width: 250px;
-  padding: 2rem 1rem;
-  text-align: center;
+.side-panel {
+  background-color: #f0f0f0;
+  padding: 2rem 1.5rem;
+  width: 280px;
   flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.sidebar h1 {
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.side-panel h1 {
   font-size: 1.6rem;
-  margin-top: 1rem;
+  margin: 0.5rem 0;
 }
 
 .subtitle {
   font-size: 0.9rem;
-  color: #ccc;
-  margin-bottom: 0.3rem;
+  color: #666;
+  margin: 2px 0;
 }
 
-.profile-photo {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-bottom: 1rem;
-}
-
-.sidebar nav ul {
-  list-style: none;
+.button-links {
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
 }
 
-.sidebar nav ul li {
-  margin: 0.5rem 0;
-}
-
-.sidebar nav a {
-  color: #4dabf7;
+.button {
+  display: block;
+  background-color: #004080;
+  color: white;
   text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s;
 }
 
-.sidebar nav a:hover {
-  text-decoration: underline;
+.button:hover {
+  background-color: #0066cc;
 }
 
 /* Main Content */
 .content {
-  padding: 2rem;
   flex-grow: 1;
+  padding: 2rem;
 }
 
 .content h2 {
@@ -108,12 +112,29 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .layout {
+  .main-layout {
     flex-direction: column;
   }
 
-  .sidebar {
+  .side-panel {
     width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .button-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
   }
 
   .content {
