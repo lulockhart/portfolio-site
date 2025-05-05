@@ -19,7 +19,7 @@ body {
 
 .side-panel {
   background-color: #1f1f2e;
-  color: white;
+  color: #ffffff;
   padding: 2rem 1.5rem;
   width: 280px;
   flex-shrink: 0;
@@ -45,7 +45,7 @@ body {
 
 .subtitle {
   font-size: 0.9rem;
-  color: #666;
+  color: #cccccc;
   margin: 2px 0;
 }
 
@@ -57,24 +57,24 @@ body {
   width: 100%;
 }
 
-/* BUTTON STYLE UPGRADE */
+/* Button Style */
 .button {
   display: block;
-  background-color: #004080;
-  color: white;
+  background-color: #0066cc;
+  color: #ffffff;
   text-decoration: none;
   padding: 0.6rem 1rem;
   border-radius: 8px;
-  border: 2px solid transparent;
+  border: 2px solid #004080;
   font-weight: 600;
   font-size: 0.95rem;
   transition: background-color 0.2s, border 0.2s, transform 0.1s;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .button:hover {
-  background-color: #0066cc;
+  background-color: #339aff;
   border: 2px solid #003366;
   transform: translateY(-1px);
 }
